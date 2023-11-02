@@ -1,0 +1,560 @@
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('fonts/PPNeueMontreal-Regular.otf') format('otf'),
+         url('fonts/PPNeueMontreal-Book.otf') format('otf');
+}
+@font-face {
+    font-family: 'Romie Trial';
+    src: url('fonts/RomieTrial-Regular.otf') format('otf'),
+         url('fonts/RomieTrial-Regular-Italic.otf') format('otf');
+}
+
+
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box!important;
+}
+body {
+    width: 100%;
+    font-family: 'PP Neue Montreal';
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p, li, .container-fluid, .row {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+    min-width: 180px;
+}
+.navbar {
+    padding: 22px 32px 0;
+    background-color: #F1F2F0;
+}
+.navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-left: 12.5px;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.nav_bar {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    text-transform: uppercase;
+}
+.navbar-nav .lang {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navbar-nav .lang > a:nth-child(3) {
+    margin-left: 8px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+/* HEADER */
+
+.header {
+    padding-left: 32px;
+    height: calc(100vh - 164px);
+    background-color: #F1F2F0;
+}
+.header_text,
+.cover {
+    position: relative;
+    padding-left: 0;
+    padding-right: 32px;
+}
+.cover img {
+    object-fit: fill;
+    padding-right: 32px;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: calc(100vh - 114px); 
+}
+.header_text {
+    display: flex;
+    height: calc(100vh - 164px); 
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0;
+}
+.header_text h3 {
+    font-family: 'Romie Trial';
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97%; /* 65.96px */
+    letter-spacing: -1.36px;
+}
+.header_text a {
+    padding: 64px 0 37px 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.header_text a p {
+    padding-top: 5px;
+}
+
+/* HERO ONE */
+
+.shouter_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 0 365px;
+}
+.shouter_one > div {
+    width: 570px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 44px;
+}
+.shouter_one p {
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 375;
+    line-height: 140%; /* 26.6px */
+}
+.shouter_one a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+/* GALLERY */
+
+body > h1 {
+    font-family: 'Romie Trial';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97%; /* 46.56px */
+    letter-spacing: -0.96px;
+    padding: 0px 52px 32px;
+}
+#gallery_one {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* background: #F1F2F0; */
+}
+#gallery_one .gallery_button {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    right: 52px;
+    top: -48px;
+    gap: 16px;
+}
+.gallery_one {
+    background: #eee;
+    font-family: 'PP Neue Montreal';
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    position: relative;
+    /* margin: 0 32px; */
+    padding: 0 52px;
+    background-color: white;
+}
+.gallery_one .swiper-slide {
+    overflow: visible;
+    position: relative;
+    font-size: 18px;        
+    width: 300px;
+    aspect-ratio: 1 / 1.5;
+}
+.gallery_one .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery_one .swiper-button-prev,
+.gallery_one .swiper-button-next {
+    display: none;
+}
+.gallery_one .swiper-slide .swiper-slide-text h3,
+.gallery_two .gallery_two_text h3 {
+    font-family: 'Romie Trial';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 36.4px */
+}
+.gallery_one .swiper-slide .swiper-slide-text h6,
+.gallery_two .gallery_two_text h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 375;
+    line-height: 140%; /* 22.4px */
+}
+.gallery_one .swiper-slide .swiper-slide-text p,
+.gallery_two .gallery_two_text p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 375;
+    line-height: 110%; /* 13.2px */
+}
+.gallery_one .swiper-slide .swiper-slide-text,
+.gallery_two .gallery_two_text {
+    padding: 20px 0;
+    color: white;
+}
+
+/* HERO-TWO */
+
+.hero_two {
+    padding: 37px 0 0;
+}
+.hero_two1 {
+    padding: 0;
+    padding-right: 6px;
+}
+.hero_two2 {
+    padding: 0;
+    padding-left: 6px;
+}
+.hero_two1,
+.hero_two2 {
+    position: relative;
+    transition: 1s;
+}
+.hero_two1:hover,
+.hero_two2:hover {
+    filter: brightness(80%);
+}
+.hero_two1 > img,
+.hero_two2 > img {
+    width: 100%;
+}
+.hero_two1  .hero_two1_text,
+.hero_two2  .hero_two2_text {
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 29px 0;
+}
+.hero_two1  .hero_two1_text a,
+.hero_two2  .hero_two2_text a {
+    display: flex;
+    color: white;
+    gap: 16px;
+}
+
+/* SHOUTER TWO */
+
+.shouter_two {
+    width: 100%;
+    margin: 50px 0;
+}
+.shouter_two > .row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+.shouter_two > .row > div > h3 {
+    font-family: 'Romie Trial';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97%; /* 46.56px */
+    letter-spacing: -0.96px;
+}
+.shouter_two > .row > div:last-child > h6 {
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 375;
+    line-height: 140%; /* 26.6px */
+}
+
+/* GALLERY_TWO */
+
+.gallery_two {
+    padding: 0 16px;
+}
+.gallery_two .gallery_two_block {
+    padding: 16px 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.gallery_two .gallery_two_block .gallery_two_text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.gallery_two .gallery_two_block img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* GALLERY_THREE */
+
+
+.gallery_three {
+    height: 100%;
+    max-height: 100vh;
+    background-color: #121201;
+    color: white;
+    padding: 64px 0;
+    position: relative;
+}
+.gallery_three .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery_three_main > div > .col-lg-8.col-md-12 {
+    padding: 0;
+}
+.gallery_three_main .gallery_three .swiper-slide img {
+    height: 80%;
+}
+.gallery_three .swiper-pagination {
+    z-index: 100;
+}
+.gallery_three .gallery_three_swiper_text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+.gallery_three_main .gallery_three_img {
+    padding: 0;
+}
+.gallery_three_main .gallery_three_img > img {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+}
+.gallery_three_main .gallery_three_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 120px 33.3%;
+}
+.gallery_three_main .gallery_three_text p { 
+    font-family: 'Romie Trial';
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 81.6px */
+    letter-spacing: -1.36px;
+}
+.gallery_three_main .swiper-button-next,
+.gallery_three_main .swiper-button-prev {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* margin-top: 64px; */
+}
+.gallery_three_main .swiper-button-next {
+    padding: 32px 28px 32px 32px;
+    margin-right: 48px;
+}
+.gallery_three_main .swiper-button-prev {
+    padding: 32px 32px 32px 28px;
+    margin-left: 48px;
+}
+.swiper-pagination-bullet {
+    background-color: white;
+}
+.gallery_three_main > div > .gallery_three_text > p span {
+    font-style: italic;
+}
+
+/* HERO_ONE */
+.hero_one {
+    padding: 0 24px;
+}
+.hero_one .hero_one1 img {
+    width: 100%;
+}
+.hero_one .hero_one2 img {
+    width: 80%;
+}
+.hero_one .hero_one3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 48px;
+}
+.hero_one .hero_one3 p {
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 375;
+    line-height: 140%; /* 26.6px */
+}
+.hero_one .hero_one3 a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    align-self: start;
+}
+
+/* FOOTER */
+
+#footer_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 78px 32px 27px;
+}
+#footer_logo img {
+    width: 100%;
+    max-width: 1465px;
+}
+footer {
+    padding: 0 32px;
+}
+footer > div > .row {
+    border-top: 1px solid black;
+    padding: 53px 0 32px;
+}
+footer .footer_subscribe {
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    gap: 18px;
+}
+footer .footer_subscribe p {
+    font-family: 'Romie Trial';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97%; /* 34.92px */
+    letter-spacing: -0.72px;
+}
+footer .footer_subscribe p span {
+    font-style: italic;
+}
+footer .footer_links {
+    padding: 0;
+}
+footer .footer_subscribe form {
+    display: flex;
+    gap: 17px;
+    justify-content: space-between;
+    margin-right: 64px;
+
+}
+footer .footer_subscribe form > input:first-child {
+    width: 75%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'PP Neue Montreal';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 375;
+    line-height: 140%; /* 26.6px */
+}
+footer .footer_subscribe form > input:last-child {
+    padding: 16px 56px;
+    background-color: white;
+    border: 1px solid black;
+}
+footer .footer_links {
+    display: flex;
+}
+footer .footer_links a {
+    font-family: 'PP Neue Montreal';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    text-transform: uppercase;
+}
+footer .footer_links div {
+    gap: 16px;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column nowrap;
+    width: 33%;
+    
+}
+footer .footer_links > div:last-child > a {
+    align-self: flex-end;
+}
+
+
+
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  }
+
+
+
+
+
